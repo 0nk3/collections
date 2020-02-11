@@ -4,7 +4,7 @@ import java.util.*;
 
 class DequeProcessing{
 
-    void process(ArrayDeque<Integer> deque, int subsetSize){
+    int process(ArrayDeque<Integer> deque, int subsetSize){
 
         HashSet<Integer> identical = new HashSet<>();            // store unique sizes of subsets
         ArrayList<Integer> uniqueSizesList = new ArrayList<>();  // store all he actual sizes
@@ -25,10 +25,10 @@ class DequeProcessing{
             //clear the hash set on every iteration of each subset creation
             identical.clear();
         }
-        System.out.println(DetermineMax(uniqueSizesList));
+        return DetermineMax(uniqueSizesList);
     }
     // find the highest number 
-    private int DetermineMax(ArrayList<Integer> uniqueSizes){
+     int DetermineMax(ArrayList<Integer> uniqueSizes){
 		int highest = 0;
 		for(Integer num : uniqueSizes){
 			if(num > highest){

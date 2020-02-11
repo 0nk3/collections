@@ -19,6 +19,7 @@ public class Main {
         Deque<Integer> deque = deuqueInput.getDeque();
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
 
-        pro.process((ArrayDeque<Integer>) deque, sizeOfSubset);
+        int output = pro.process((ArrayDeque<Integer>) deque, sizeOfSubset);
+        System.out.println(output);
     }
 }
