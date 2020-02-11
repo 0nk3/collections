@@ -58,8 +58,8 @@ class DequeProcessingTest {
 		// given
 		ArrayList<Integer> numbers = new ArrayList<>();
 		int[] nums = new int[]{3,27,0,-4,10,2};
-		for (int num:nums
-			 ) {
+		for (int num:
+				nums) {
 			numbers.add(num);
 		}
 		// then

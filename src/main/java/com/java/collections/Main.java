@@ -6,7 +6,7 @@ import java.util.*;
  * Title   : Java Collections                               *
  * ******************************************************** */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
         // Creation of all objects
         DeuqueInput deuqueInput = new DeuqueInput();

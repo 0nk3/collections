@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.java.collections.DeuqueInputTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-02-11T18:28:52" hostname="kali" time="0.011">
+  <properties/>
+  <testcase name="getDequeTest()" classname="com.java.collections.DeuqueInputTest" time="0.011"/>
+  <system-out><![CDATA[Enter deque elements eg 4 5 8 0 0 : 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

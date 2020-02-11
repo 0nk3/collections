@@ -22,7 +22,7 @@ class DeuqueInput {
         return subsetSize;
     }
 
-    Deque<Integer> getDeque() {
+    Deque<Integer> getDeque() throws Exception {
         System.out.println("Enter deque elements eg 4 5 8 0 0 : ");
         String element = input.nextLine();
 
@@ -33,7 +33,7 @@ class DeuqueInput {
             try {
                 deque.add(Integer.parseInt(strNum));
             }catch (NumberFormatException e){
-                System.err.println("Invalid input");
+                throw new Exception("Invalid Input");
             }
         }
         return deque;
