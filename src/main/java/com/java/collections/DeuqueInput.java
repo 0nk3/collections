@@ -11,7 +11,7 @@ class DeuqueInput {
 
     // Let retrieve the size of the deque
     int getSize() {
-        System.out.println("Enter Size of the deque : ");
+        System.out.println("Enter the size of the deque : ");
         return input.nextInt();
     }
     // Lets get the size of a subset generated
@@ -38,5 +38,4 @@ class DeuqueInput {
         }
         return deque;
     }
-
 }

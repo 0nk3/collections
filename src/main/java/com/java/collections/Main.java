@@ -3,16 +3,16 @@ package com.java.collections;
 import java.util.*;
 /* ******************************************************** *
  * @author : Ndumiso Onke Fanti                             *
- * Title   :                           *
+ * Title   : Java Collections                               *
  * ******************************************************** */
 public class Main {
     public static void main(String[] args) {
-
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
         // Creation of all objects
         DeuqueInput deuqueInput = new DeuqueInput();
         DequeProcessing pro = new DequeProcessing();
 
-        //Getting input and  retrieving all the return values from the input methods
+        // Getting input and  retrieving all the return values from the input methods
         int dequeSize = deuqueInput.getSize();
         int sizeOfSubset = deuqueInput.getSubsetSize();
 
