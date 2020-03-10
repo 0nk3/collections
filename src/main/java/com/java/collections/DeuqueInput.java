@@ -25,7 +25,7 @@ class DeuqueInput {
         return subsetSize;
     }
 
-    Deque<Integer> getDeque() throws Exception {
+    Deque<Integer> getDeque() {
         System.out.println("Enter deque elements eg 4 5 8 0 0 : ");
         String element = input.nextLine();
 
