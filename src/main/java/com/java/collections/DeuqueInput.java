@@ -3,13 +3,16 @@ package com.java.collections;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Scanner;
-
+/* ******************************************************************** *
+ * In this class I'm simply getting all the required input from the user*
+ * and validating it                                                    *
+ * ******************************************************************** */
 class DeuqueInput {
 
     private Deque<Integer> deque = new ArrayDeque<>();
     private Scanner input = new Scanner(System.in);
 
-    // Let retrieve the size of the deque
+    // Lets retrieve the size of the deque
     int getSize() {
         System.out.println("Enter the size of the deque : ");
         return input.nextInt();
@@ -27,13 +30,13 @@ class DeuqueInput {
         String element = input.nextLine();
 
         String[] intArray = element.split(" ");
-
         //Take all the read input and convert to int, store in a deque and return the deque
         for (String strNum: intArray) {
             try {
                 deque.add(Integer.parseInt(strNum));
             }catch (NumberFormatException e){
-                throw new Exception("Invalid Input");
+                System.err.println("Sorry, Your input is invalid");
+                throw new NumberFormatException();
             }
         }
         return deque;

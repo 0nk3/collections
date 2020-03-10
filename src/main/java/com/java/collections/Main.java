@@ -7,8 +7,7 @@ import java.util.*;
  * ******************************************************** */
 public class Main {
     public static void main(String[] args) throws Exception {
-        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
-        // Creation of all objects
+
         DeuqueInput deuqueInput = new DeuqueInput();
         DequeProcessing pro = new DequeProcessing();
 
@@ -17,9 +16,10 @@ public class Main {
         int sizeOfSubset = deuqueInput.getSubsetSize();
 
         Deque<Integer> deque = deuqueInput.getDeque();
-        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println("<==================================================>");
 
         int output = pro.process((ArrayDeque<Integer>) deque, sizeOfSubset);
         System.out.println(output);
+        System.out.println("<=================== FINISH =======================>");
     }
 }

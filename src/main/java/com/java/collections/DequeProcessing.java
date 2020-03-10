@@ -1,15 +1,17 @@
 package com.java.collections;
 
 import java.util.*;
-
+/* ********************************************************************** *
+ * In this class Im getting the subsets, counting unique numbers and      *
+ * finding the highest number found for the unique numbers in the subsets *
+ * ********************************************************************** */
 class DequeProcessing{
-
     int process(ArrayDeque<Integer> deque, int subsetSize){
 
         HashSet<Integer> identical = new HashSet<>();            // store unique sizes of subsets
-        ArrayList<Integer> uniqueSizesList = new ArrayList<>();  // store all he actual sizes
+        ArrayList<Integer> uniqueSizesList = new ArrayList<>();  // store all the actual sizes
 
-        int subsetsNumber = deque.size() - subsetSize + 1; // total number of possible subsets
+        int subsetsNumber = deque.size() - subsetSize + 1; //general formulae for the total number of possible subsets
 
         for (int i = 0; i < subsetsNumber; i++) {
             Object[] deqAsArray = deque.toArray();
@@ -25,16 +27,16 @@ class DequeProcessing{
             //clear the hash set on every iteration of each subset creation
             identical.clear();
         }
-        return DetermineMax(uniqueSizesList);
+        return determineMax(uniqueSizesList);
     }
     // find the highest number 
-     int DetermineMax(ArrayList<Integer> uniqueSizes){
-		int highest = 0;
+     int determineMax(ArrayList<Integer> uniqueSizes){
+		int maximum = 0;
 		for(Integer num : uniqueSizes){
-			if(num > highest){
-				highest = num;
+			if(num > maximum){
+				maximum = num;
 			}
 		}
-		return highest;
+		return maximum;
 	}
 }

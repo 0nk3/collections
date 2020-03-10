@@ -65,6 +65,6 @@ class DequeProcessingTest {
 		// then
 		int highest = 27;
 		// then
-		Assert.assertEquals(highest, processing.DetermineMax(numbers));
+		Assert.assertEquals(highest, processing.determineMax(numbers));
 	}
 }
