@@ -6,7 +6,7 @@ import java.util.*;
  * Title   : Java Collections                               *
  * ******************************************************** */
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
 
         DeuqueInput deuqueInput = new DeuqueInput();
         DequeProcessing pro = new DequeProcessing();
