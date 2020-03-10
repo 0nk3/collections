@@ -11,7 +11,7 @@ class DequeProcessingTest {
 	private ArrayDeque<Integer> deque = new ArrayDeque<>();
 
 	@Test
-	void should_ReturnOne_When_Given_IdenticalNumbers(){
+	void shouldReturnOneWhenGivenIdenticalNumbers(){
 		//given
 		for(int i = 0; i < 8; i++){
 			deque.add(2);
@@ -24,7 +24,7 @@ class DequeProcessingTest {
 	}
 
 	@Test
-	void should_ReturnThree(){
+	void shouldReturnThree(){
 		//given
 		int[] inputNumbers = new int[]{6,2,6,8,3,7,1,4,4};
 		for (int number:
@@ -39,7 +39,7 @@ class DequeProcessingTest {
 	}
 
 	@Test
-	void should_ReturnTwo(){
+	void shouldReturnTwo(){
 		//given
 		int[] inputNumbers = new int[]{7,5,5,7,5,5,7,5,5,6};
 		for (int number:
@@ -54,12 +54,11 @@ class DequeProcessingTest {
 	}
 
 	@Test
-	void should_ReturnHighestNumber(){
+	void shouldReturnHighestNumber(){
 		// given
 		ArrayList<Integer> numbers = new ArrayList<>();
 		int[] nums = new int[]{3,27,0,-4,10,2};
-		for (int num:
-				nums) {
+		for (int num: nums) {
 			numbers.add(num);
 		}
 		// then
