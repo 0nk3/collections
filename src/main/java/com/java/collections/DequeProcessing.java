@@ -8,6 +8,7 @@ import java.util.*;
  *   - add them to a HashSet (no duplicates)                                       *
  *   - Remove the first element                                                    *
  *   - Check and store HashSet size and that's equal to number of unique elements  *
+ *   - Clear the HashSet                                                           *
  *   - Use separate method to find maximum and print it out                        *
  * ******************************************************************************* */
 class DequeProcessing{
